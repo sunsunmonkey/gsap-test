@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'bold';
+    src: url('assets/font/PINGFANG BOLD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url('assets/font/PINGFANG MEDIUM.TTF.TTF') format('truetype');
+}
+
+
+body{
+    -moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    -khtml-user-select:none; /*早期浏览器*/
+    user-select:none;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100vh;
+    font-family: "bold" ;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5vw;
+}
+
+.ChangePage_main{
+    position: fixed;
+    background: white;
+    border-radius: 0.1vw;
+}
+
+.ChangePage_second{
+    border: 1px skyblue solid;
+}
