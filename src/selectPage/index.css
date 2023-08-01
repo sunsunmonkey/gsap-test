@@ -38,6 +38,17 @@ body{
     border-radius: 0.1vw;
 }
 
-.ChangePage_second{
-    border: 1px skyblue solid;
+
+.wrapper{
+    padding: 1vw;
+}
+.f{
+    position: absolute;
+    height: 1vw;
+    width: 98vw;
+    padding: 1px;
+    background-color: aqua;
+}
+h1{
+    height: 1px;
 }

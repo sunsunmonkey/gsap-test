@@ -1,4 +1,3 @@
-
 import { movePage } from "./util/movePage";
 
 interface Iprops {
@@ -6,8 +5,7 @@ interface Iprops {
   setSelect: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function ChangePage({ select, setSelect }: Iprops) {
-
+export default function ChangePage({ select }: Iprops) {
   return (
     <div className="ChangePage_main">
       <div
@@ -15,7 +13,7 @@ export default function ChangePage({ select, setSelect }: Iprops) {
         style={{ color: select === 0 ? "red" : "black" }}
         onClick={() => {
           movePage("#first");
-          setSelect(0);
+          console.log("0");
         }}
       >
         first
@@ -25,7 +23,7 @@ export default function ChangePage({ select, setSelect }: Iprops) {
         style={{ color: select === 1 ? "red" : "black" }}
         onClick={() => {
           movePage("#second");
-          setSelect(1);
+          console.log("1");
         }}
       >
         second
@@ -35,10 +33,21 @@ export default function ChangePage({ select, setSelect }: Iprops) {
         style={{ color: select === 2 ? "red" : "black" }}
         onClick={() => {
           movePage("#third");
-          setSelect(2);
+          console.log("2");
         }}
       >
         third
+      </div>
+
+      <div
+        className="ChangePage_fourth"
+        style={{ color: select === 3 ? "red" : "black" }}
+        onClick={() => {
+          movePage("#fourth");
+          console.log("3");
+        }}
+      >
+        fourth
       </div>
     </div>
   );
