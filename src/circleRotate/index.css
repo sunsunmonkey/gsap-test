@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    overflow: hidden;
+}
+.top{
+    width: 20vw;
+    height: 20vh;
+    background-color: black;
+    margin: 0 auto;
+    background: url(../assets/img/aboutSpace.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bottom{
+    width: 20vw;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: rgb(251, 10, 10);
+    background: url(../assets/img/test.jpg) no-repeat;
+    background-size: cover;
+}
+
+.page{
+    height: 100vh;
+}
+.cover{
+    position: fixed;
+    height: 25vh;
+    width: 100vw;
+    background-color: rgb(255, 64, 0);
+    z-index: 999;
+    top: 49%;
+}
