@@ -29,7 +29,7 @@ export default function Page({ content, color, id, index, setSelect }: IProps) {
             setSelect(index);
             console.log("enter");
           },
-          onEnterBack: () => {
+          onLeaveBack: () => {
             setSelect(index);
             console.log("enterBack");
           },
