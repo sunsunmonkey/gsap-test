@@ -11,8 +11,8 @@ function App() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      gsapRotate(tl, "top top", "10% top ", 1, src);
-      gsapRotate(t2, "10% top", "30% top", 2, src1);
+      gsapRotate(tl, 1, 1000, 1, src);
+      gsapRotate(t2, 1000,2000, 2, src1);
       // tl.current = gsap
       //   .timeline({
       //     scrollTrigger: {
